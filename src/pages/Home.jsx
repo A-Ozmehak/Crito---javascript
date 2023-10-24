@@ -9,8 +9,8 @@ import AboutCompanySection from '../components/home/AboutCompanySection'
 import ServicesSection from '../components/home/Services/ServicesSection'
 import ChooseUsSection from '../components/home/ChooseUs/ChooseUsSection'
 import ProjectSection from '../components/home/Project/ProjectSection'
-import TeamSection from '../components/home/TeamSection'
-import ArticleNewsSection from '../components/home/Article-NewsSection'
+import TeamSection from '../components/home/Team/TeamSection'
+import ArticleNewsSection from '../components/home/Article/Article-NewsSection'
 import NewsletterSection from '../components/NewsletterSection'
 
 export const Home = () => {
