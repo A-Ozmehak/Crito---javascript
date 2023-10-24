@@ -14,8 +14,8 @@ export const ChooseUsSection = () => {
                         <h2>Why We Are The Best Business Consulting Agency</h2>
                     </div>
                     <div className="content">
-                        <div className="icon">
-                            <FiThumbsUp />
+                        <div className="icon-container">
+                            <FiThumbsUp className="icon" />
                         </div>
                         <div className="text">
                             <p className="list-title">Process Excellence</p>
@@ -23,8 +23,8 @@ export const ChooseUsSection = () => {
                         </div>
                     </div>
                     <div className="content">
-                        <div className="icon">
-                            <PiHexagon />
+                        <div className="icon-container">
+                            <PiHexagon className="icon" />
                         </div>
                         <div className="text">
                             <p className="list-title">Strategic Planning</p>
@@ -32,8 +32,8 @@ export const ChooseUsSection = () => {
                         </div>
                     </div>
                     <div className="content">
-                        <div className="icon">
-                            <FaDraftingCompass />
+                        <div className="icon-container">
+                            <FaDraftingCompass className="icon" />
                         </div>
                         <div className="text">
                             <p className="list-title">Experience Design</p>
@@ -41,8 +41,8 @@ export const ChooseUsSection = () => {
                         </div>
                     </div>
                     <div className="content">
-                        <div className="icon">
-                            <FaHeadSideVirus />
+                        <div className="icon-container">
+                            <FaHeadSideVirus className="icon" />
                         </div>
                         <div className="text">
                             <p className="list-title">Artificial Inteligence</p>

@@ -179,7 +179,7 @@ header .header-container .menu .top-menu .contact-information .contact-box {
 header .header-container .menu .top-menu .contact-information .contact-box.last {
   border: none;
 }
-header .header-container .menu .top-menu .contact-information .contact-box .icon {
+header .header-container .menu .top-menu .contact-information .contact-box i {
   margin-right: 5px;
 }
 header .header-container .menu .top-menu .social-media a {

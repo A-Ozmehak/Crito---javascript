@@ -1,12 +1,13 @@
 import { AiFillFacebook, AiOutlineTwitter, AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai"
 import "../css/global.css"
 import FooterLogo from "../assets/LogoWhite.svg"
+import FooterLines from "../assets/lines-footer.png"
 
 export const Footer = () => {
     return (
         <footer>
             <div className="background-lines">
-                <img src="img/lines-footer.png" alt="background lines" />
+                <img src={FooterLines} alt="background lines" />
             </div>
             <div className="container">
                 <div className="footer-top-part">

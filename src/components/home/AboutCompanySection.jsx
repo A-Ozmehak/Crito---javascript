@@ -1,6 +1,7 @@
-import { BsArrowUpRight, BsFillPlayFill } from "react-icons/bs";
+import { BsFillPlayFill } from "react-icons/bs";
 import companyLines from "../../assets/company-line.svg";
 import companyImg from "../../assets/about.png";
+import BlackBtn from "../Generics/BlackBtn";
 
 export const AboutCompanySection = () => {
     return (
@@ -13,7 +14,7 @@ export const AboutCompanySection = () => {
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. <br/><br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
                 <div className="buttons-container">
-                    <a className="learn-more-btn btn-black">Learn More<BsArrowUpRight className="icon-left"/></a>
+                    <BlackBtn text="Learn More" url="/about" className="learn-more-btn" />
                     <div className="video-btn-container">
                         <a className="play-btn"><BsFillPlayFill /></a>
                         <span className="intro-video">Intro Video</span>

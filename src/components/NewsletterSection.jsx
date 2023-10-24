@@ -1,5 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
-import lines from "../../assets/line-newletter.png";
+import lines from "../assets/line-newletter.png";
 
 export const NewsletterSection = () => {
     return (

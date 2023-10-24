@@ -1,10 +1,11 @@
 import { Header } from '../components/Header'
-import { TitleSection } from '../components/Title-section'
+import { TitleSection } from '../components/contact/Title-section'
 import { ContactInformationBoxes } from '../components/contact/Contact-information-boxes'
 import { ContactForm } from '../components/contact/Contact-form'
 import { Map } from '../components/contact/Map'
 import "../css/global.css"
 import "../css/contact.css"
+import Footer from '../components/Footer'
 
 export const Contact = () => {
     return (
@@ -14,6 +15,7 @@ export const Contact = () => {
             <ContactInformationBoxes />
             <ContactForm />
             <Map />
+            <Footer />
         </div>
     )
 

@@ -6,12 +6,12 @@ import { ShowCaseSection } from '../components/home/ShowcaseSection'
 import { Logos } from '../components/home/LogosSection'
 import { FeaturesSection } from '../components/home/FeaturesSection'
 import AboutCompanySection from '../components/home/AboutCompanySection'
-import ServicesSection from '../components/home/ServicesSection'
+import ServicesSection from '../components/home/Services/ServicesSection'
 import ChooseUsSection from '../components/home/ChooseUsSection'
 import ProjectSection from '../components/home/ProjectSection'
 import TeamSection from '../components/home/TeamSection'
 import ArticleNewsSection from '../components/home/Article-NewsSection'
-import NewsletterSection from '../components/home/NewsletterSection'
+import NewsletterSection from '../components/NewsletterSection'
 
 export const Home = () => {
     return (

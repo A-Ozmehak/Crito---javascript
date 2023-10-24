@@ -1,7 +1,7 @@
-import { BsArrowUpRight } from "react-icons/bs"
 import news1 from "../../assets/news1.png"
 import news2 from "../../assets/news2.png"
 import news3 from "../../assets/news3.png"
+import TransparentBtn from '../Generics/TransparentBtn';
 
 export const ArticleNewsSection = () => {
     return (
@@ -13,7 +13,7 @@ export const ArticleNewsSection = () => {
                     <h2>Get Every Single Articles & News</h2>
                 </div>
                     <div className="btn">
-                        <a className="btn-transparent">Browse Articles<BsArrowUpRight className="icon-left"/></a>
+                        <TransparentBtn text="View Articles" url="/news" />
                     </div>
             </div>
             <div className="content-container">

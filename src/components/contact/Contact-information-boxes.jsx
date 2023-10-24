@@ -9,7 +9,7 @@ export const ContactInformationBoxes = () => {
             <div className="container">
                 <div className="contact-content">
                     <div className="icon">
-                    <GrLocation />
+                        <GrLocation />
                     </div>
                     <div>
                         <h2>Visit us</h2>
@@ -19,7 +19,7 @@ export const ContactInformationBoxes = () => {
                 </div>
                 <div className="contact-content">
                     <div className="icon">
-                    <BiPhoneCall />
+                        <BiPhoneCall />
                     </div>
                     <div>
                         <h2>Call us</h2>
@@ -29,7 +29,7 @@ export const ContactInformationBoxes = () => {
                 </div>
                 <div className="contact-content">
                     <div className="icon">
-                    <BsEnvelopeAt />
+                        <BsEnvelopeAt />
                     </div>
                     <div>
                         <h2>Email us</h2>
