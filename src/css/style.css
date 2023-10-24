@@ -161,11 +161,10 @@ body {
     width: 307px;
   }
 }
-.features-section .container .features .feature .icon {
+.features-section .container .features .feature i {
   padding-top: 32px;
   padding-bottom: 30px;
-  height: 30px;
-  width: 30px;
+  font-size: 30px;
 }
 .features-section .container .features .feature .feature-title {
   font-family: "DM Sans", sans-serif;
@@ -567,16 +566,17 @@ body {
 .choose-us-section .container .text-content .content .icon-container {
   margin-bottom: 10px;
 }
-.choose-us-section .container .text-content .content .icon-container .icon {
+.choose-us-section .container .text-content .content .icon-container i {
   margin-top: 32px;
   font-size: 30px;
   margin-right: 30px;
   border: 1px solid #DAD9D3;
   padding: 20px;
   border-radius: 35px;
+  color: #191919;
 }
 @media (min-width: 1200px) {
-  .choose-us-section .container .text-content .content .icon-container .icon {
+  .choose-us-section .container .text-content .content .icon-container i {
     margin-bottom: 20px;
     margin-top: 16px;
   }

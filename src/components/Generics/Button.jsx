@@ -1,6 +1,5 @@
 // Removed unused import statement
 import PropTypes from 'prop-types'
-import { BsArrowUpRight } from "react-icons/bs"
 
 const YellowBtn = ({ type, text, url }) => {
     const getButton = () => {
@@ -16,7 +15,7 @@ const YellowBtn = ({ type, text, url }) => {
     return (
         <a className={getButton()} href={url}>
                 {text}
-                <BsArrowUpRight className="icon-left"/>
+                <i className="fa-solid fa-arrow-up-right icon-left"></i>
         </a>
     )
 }

@@ -40,7 +40,7 @@ export const Header = () => {
                                 <Link to="/news">News</Link>
                                 <Link to="/contact">Contact</Link>
                             </nav>
-                            <Button type="yellow" text="Login" url="consulting.html" />
+                            <Button type="yellow" text="Login" url="/login" />
                         </div>
                     </div>  
                 </div> 

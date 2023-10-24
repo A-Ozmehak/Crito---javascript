@@ -1,8 +1,15 @@
-import { BsArrowUpRight } from "react-icons/bs";
 import lines from "../../../assets/service-line.png"
 import ServiceBox from "./ServiceBox"
+import Button from "../../Generics/Button"
 
 export const ServicesSection = () => {
+    const services = [
+        { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+        { title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+        { title: "Financial Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+        { title: "Risk Management", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
+    ]
+
     return (
         <section className="our-services-section">
         <div className="lines-box">
@@ -14,13 +21,14 @@ export const ServicesSection = () => {
                 <h2>We Provide The Best Service For Consulting</h2>
             </div>
             <div className="services">
-               <ServiceBox title="Business Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="" />
-               <ServiceBox title="Startup Business" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="" />
-               <ServiceBox title="Financial Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="" />
-               <ServiceBox title="Risk Management" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="" />
+                {
+                    services.map((service, index) => (
+                        <ServiceBox key={index} title={service.title} description={service.description} />
+                    ))
+                }               
             </div>
             <div className="button-container">
-                <a className="btn-transparent">Browse Services<BsArrowUpRight className="icon-left"/></a>
+                <Button type="transparent" text="Browse Services" url="/services" />
             </div>
         </div>
     </section>

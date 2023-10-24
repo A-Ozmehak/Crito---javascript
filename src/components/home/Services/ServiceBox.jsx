@@ -1,4 +1,3 @@
-import { AiOutlineArrowRight } from 'react-icons/ai'
 import PropTypes from 'prop-types'
 
 const ServiceBox = ({ title, description }) => {
@@ -8,7 +7,7 @@ const ServiceBox = ({ title, description }) => {
             <h3 className="service-title">{ title }</h3>
             <p>{ description }</p>
             <div className="rounded-border-arrow">
-                <a><AiOutlineArrowRight /></a>
+                <a><i className="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
   )

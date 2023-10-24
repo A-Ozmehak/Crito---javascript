@@ -1,6 +1,6 @@
-import { BsArrowUpRight } from "react-icons/bs";
 import lines from "../../assets/background-lines-showcase.png";
 import showcase from "../../assets/showcase.png";
+import Button from "../Generics/Button";
 
 export const ShowCaseSection = () => {
     return (
@@ -12,8 +12,8 @@ export const ShowCaseSection = () => {
                     <div className="showcase-left">
                             <h1>We provide The Best business solutions</h1>
                             <p className="showcase-text">Establish your vision and value proposition and turn them into testable prototypes.</p>
-                            <a href="consulting.html" className="btn-yellow">Get Consulting<BsArrowUpRight className="icon-left"/></a>
-                            <a href="services.html" className="btn-transparent">Learn more<BsArrowUpRight className="icon-left"/></a>
+                            <Button type="yellow" text="Get Consulting" url="/consulting" />
+                            <Button type="transparent" text="Learn more" url="/services" />
                     </div>
                     <img src={showcase} alt="man with a tablet" />
                 </div>

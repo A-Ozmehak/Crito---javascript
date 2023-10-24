@@ -1,6 +1,3 @@
-import { BiPhoneCall } from "react-icons/bi"
-import { BsEnvelopeAt } from "react-icons/bs"
-import { GrLocation } from "react-icons/gr"
 
 export const ContactInformationBoxes = () => {
     return (
@@ -9,7 +6,7 @@ export const ContactInformationBoxes = () => {
             <div className="container">
                 <div className="contact-content">
                     <div className="icon">
-                        <GrLocation />
+                        <i className="fa-solid fa-location-dot"></i>
                     </div>
                     <div>
                         <h2>Visit us</h2>
@@ -19,7 +16,7 @@ export const ContactInformationBoxes = () => {
                 </div>
                 <div className="contact-content">
                     <div className="icon">
-                        <BiPhoneCall />
+                        <i className="fa-solid fa-phone"></i>
                     </div>
                     <div>
                         <h2>Call us</h2>
@@ -29,7 +26,7 @@ export const ContactInformationBoxes = () => {
                 </div>
                 <div className="contact-content">
                     <div className="icon">
-                        <BsEnvelopeAt />
+                        <i className="fa-solid fa-envelope"></i>
                     </div>
                     <div>
                         <h2>Email us</h2>

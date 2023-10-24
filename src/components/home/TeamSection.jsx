@@ -1,4 +1,3 @@
-import { BsArrowUpRight } from "react-icons/bs"
 import team1 from "../../assets/Team1.png"
 import team2 from "../../assets/Team2.png"
 import team3 from "../../assets/Team3.png"
@@ -7,6 +6,7 @@ import customer1 from "../../assets/customer1.png"
 import customer2 from "../../assets/customer2.png"
 import customer3 from "../../assets/customer3.png"
 import stars from "../../assets/Stars.svg"
+import Button from "../Generics/Button"
 
 export const TeamSection = () => {
     return (
@@ -18,7 +18,7 @@ export const TeamSection = () => {
                         <h2>Experience Team Members</h2>
                     </div>
                     <div className="btn">
-                        <a className="btn-yellow">Browse Team<BsArrowUpRight className="icon-left"/></a>
+                        <Button type="yellow" text="Browse Team" url="/team" />
                     </div>
                 </div>
                 <div className="team-members">
@@ -92,7 +92,7 @@ export const TeamSection = () => {
                         </div>
                     </div>
                     <div className="btn">
-                        <a className="btn-black">All Reviews<BsArrowUpRight className="icon-left"/></a>
+                        <Button type="black" text="All Reviews" url="/reviews" />
                     </div>
                 </div>
             </div>

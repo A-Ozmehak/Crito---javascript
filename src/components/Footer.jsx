@@ -1,4 +1,3 @@
-import { AiFillFacebook, AiOutlineTwitter, AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai"
 import "../css/global.css"
 import FooterLogo from "../assets/LogoWhite.svg"
 import FooterLines from "../assets/lines-footer.png"
@@ -52,10 +51,10 @@ export const Footer = () => {
                     <div className="footer-bottom-part">
                         <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
                         <div className="social-media">
-                            <a href="https://facebook.com" className="active"><AiFillFacebook className="icon" /></a>
-                            <a href="https://twitter.com"><AiOutlineTwitter className="icon" /></a>
-                            <a href="https://instagram.com"><AiOutlineInstagram className="icon" /></a>
-                            <a href="https://linkedin.com"><AiFillLinkedin className="icon" /></a>
+                            <a href="https://facebook.com" className="active"><i className="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com"><i className="fa-brands fa-twitter"></i></a>
+                            <a href="https://instagram.com"><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://linkedin.com"><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

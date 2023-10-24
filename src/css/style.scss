@@ -184,11 +184,10 @@ body {
                         width: 307px;
                 }
         
-                .icon {
+                i {
                     padding-top: 32px;
                     padding-bottom: 30px;
-                    height: 30px;
-                    width: 30px;
+                    font-size: 30px;
                 }
         
                 .feature-title {
@@ -609,14 +608,14 @@ body {
                
                 .icon-container {
                     margin-bottom: 10px;
-                    .icon {
+                    i {
                         margin-top: 32px;
                         font-size: 30px;
                         margin-right: 30px;
                         border: 1px solid $border;
                         padding: 20px;
                         border-radius: 35px;
-                        // color: $black;
+                        color: $black;
         
                         @media (min-width: 1200px) {
                             margin-bottom: 20px;

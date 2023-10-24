@@ -409,11 +409,11 @@ footer {
                 a {
                     margin-right: 20px;
 
-                    &:hover .icon {
+                    &:hover i {
                         color: $primary-color;
                     }
 
-                    .icon {
+                    i {
                         color: $white;
                         transition: color 0.2s ease-in-out;
                     }

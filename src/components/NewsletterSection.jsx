@@ -1,5 +1,5 @@
-import { BsArrowUpRight } from "react-icons/bs";
 import lines from "../assets/line-newletter.png";
+import Button from "./Generics/Button";
 
 export const NewsletterSection = () => {
     return (
@@ -9,9 +9,9 @@ export const NewsletterSection = () => {
             </div>
             <div className="container">
                 <h2>Get News Updates By Signup</h2>
-                <form>
+                <form onSubmit="" method="post">
                     <input id="email" type="email" placeholder="username@domain.com" name="email" title="email" tabIndex="1" />
-                    <button type="submit" className="btn-yellow">Subscribe<BsArrowUpRight className="icon-left"/></button>
+                    <Button type="yellow" text="Subscribe" url="/subscribe" />
                 </form>           
             </div>
         </section>

@@ -359,10 +359,10 @@ footer .container .footer-bottom-part .social-media {
 footer .container .footer-bottom-part .social-media a {
   margin-right: 20px;
 }
-footer .container .footer-bottom-part .social-media a:hover .icon {
+footer .container .footer-bottom-part .social-media a:hover i {
   color: #f9d783;
 }
-footer .container .footer-bottom-part .social-media a .icon {
+footer .container .footer-bottom-part .social-media a i {
   color: #fff;
   transition: color 0.2s ease-in-out;
 }/*# sourceMappingURL=global.css.map */
