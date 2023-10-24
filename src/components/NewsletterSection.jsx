@@ -4,7 +4,10 @@ import Button from "./Generics/Button";
 export const NewsletterSection = () => {
     const subscribe = () => {
     }
-    
+
+    const validation = () => {
+    }
+
     return (
         <section className="newsletter-section">
             <div className="background-lines-right">

@@ -3,7 +3,10 @@ import Button from "../Generics/Button"
 export const ContactForm = () => {
     const submitContactForm = () => {
     }
-    
+
+    const validation = () => {
+    }
+
     return (
         <section className="contact-form">
             <div className="container">
