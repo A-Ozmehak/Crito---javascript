@@ -2,7 +2,7 @@ import lines from "../../assets/background-lines-showcase.png";
 import showcase from "../../assets/showcase.png";
 import Button from "../Generics/Button";
 
-export const ShowCaseSection = () => {
+const ShowCaseSection = () => {
     return (
         <section className="showcase-section">
                 <div className="lines">

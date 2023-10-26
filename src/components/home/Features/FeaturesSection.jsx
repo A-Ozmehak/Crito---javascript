@@ -1,13 +1,12 @@
 import Button from "../../Generics/Button";
 import Feature from "./Feature";
 
-export const FeaturesSection = () => {
+const FeaturesSection = () => {
     const features = [
         { icon: "fa-regular fa-handshake", title: "Business Advice", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
         { icon: "fa-regular fa-lightbulb-exclamation-on", title: "Startup Business", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
         { icon: "fa-regular fa-building-columns", title: "Financial Advice", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
         { icon: "fa-regular fa-gear", title: "Risk Management", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-        
     ]
 
     return (

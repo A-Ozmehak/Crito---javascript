@@ -10,7 +10,7 @@ import Button from "../../Generics/Button"
 import TeamMembers from "./TeamMembers"
 import Testimonial from "./Testimonial"
 
-export const TeamSection = () => {
+const TeamSection = () => {
     const team = [
         {img: team1, alt: "image of Kristine Palmer the chef operation officer", name: "Kristine Palmer", position: "Chef Operation Officer"},
         {img: team2, alt: "image of Mark Aubri a senior consultant", name: "Mark Aubri", position: "Senior Consultant"},

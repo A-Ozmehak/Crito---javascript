@@ -1,6 +1,6 @@
 import backgroundLines from '../../assets/background-lines-showcase.png'
 
-export const TitleSection = () => {
+const TitleSection = () => {
     return (
         <section className="title-section">
             <div className="lines">

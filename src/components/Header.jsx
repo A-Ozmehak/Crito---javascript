@@ -3,7 +3,7 @@ import Logo from "../assets/Logo.svg"
 import { Link } from 'react-router-dom';
 import Button from "./Generics/Button"
 
-export const Header = () => {
+const Header = () => {
     return (
         <header>
             <div className="container">

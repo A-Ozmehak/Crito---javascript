@@ -1,5 +1,5 @@
 
-export const ContactInformationBoxes = () => {
+const ContactInformationBoxes = () => {
     return (
         <div>
             <section className="contact-information-boxes">

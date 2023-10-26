@@ -5,7 +5,7 @@ import square from '../../../assets/square.svg'
 import gobona from '../../../assets/gobona.svg'
 import Logo from './Logo'
 
-export const Logos = () => {
+const Logos = () => {
     const logos = [
         {
             img: paperz,

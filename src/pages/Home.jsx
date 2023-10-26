@@ -1,9 +1,9 @@
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import "../css/global.css"
 import "../css/style.css"
-import { ShowCaseSection } from '../components/home/ShowcaseSection'
-import { Logos } from '../components/home/BrandLogos/LogosSection'
+import ShowCaseSection from '../components/home/ShowcaseSection'
+import Logos from '../components/home/BrandLogos/LogosSection'
 import FeaturesSection from '../components/home/Features/FeaturesSection'
 import AboutCompanySection from '../components/home/AboutCompanySection'
 import ServicesSection from '../components/home/Services/ServicesSection'

@@ -1,4 +1,3 @@
-// Removed unused import statement
 import PropTypes from 'prop-types'
 
 const YellowBtn = ({ color, type, text, url }) => {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 
-export const Article = () => {
+const Article = () => {
 
     const [article, setArticle] = useState({});
     const { id } = useParams();

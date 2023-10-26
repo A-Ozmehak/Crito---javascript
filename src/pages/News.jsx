@@ -1,4 +1,4 @@
-import { Header } from '../components/Header'
+import Header from '../components/Header'
 import "../css/global.css"
 import "../css/contact.css"
 import "../css/articles.css"

@@ -2,7 +2,7 @@ import companyLines from "../../assets/company-line.svg";
 import companyImg from "../../assets/about.png";
 import Button from "../Generics/Button";
 
-export const AboutCompanySection = () => {
+const AboutCompanySection = () => {
     return (
         <section className="about-company-section">
         <div className="container">

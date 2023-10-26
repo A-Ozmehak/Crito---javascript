@@ -5,7 +5,7 @@ import project4 from "../../../assets/project4.png";
 import Button from "../../Generics/Button"
 import Project from "./Project"
 
-export const ProjectSection = () => {
+const ProjectSection = () => {
     const projects = [
         {
             img: project1,

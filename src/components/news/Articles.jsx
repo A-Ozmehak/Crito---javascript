@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
-export const News = () => {
+const News = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {

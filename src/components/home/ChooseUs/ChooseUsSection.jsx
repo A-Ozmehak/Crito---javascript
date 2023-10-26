@@ -1,7 +1,7 @@
 import chooseUs from '../../../assets/choose-us.png'
 import Services from './Services'
 
-export const ChooseUsSection = () => {
+const ChooseUsSection = () => {
     const content = [
         {
             icon: "fa-regular fa-thumbs-up",

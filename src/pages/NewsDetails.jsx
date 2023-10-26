@@ -1,5 +1,5 @@
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import "../css/global.css"
 import "../css/contact.css"
 import Article from '../components/NewsDetails/Article'

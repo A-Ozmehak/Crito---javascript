@@ -1,6 +1,6 @@
 import Button from "../Generics/Button"
 
-export const ContactForm = () => {
+const ContactForm = () => {
     const submitContactForm = () => {
     }
 

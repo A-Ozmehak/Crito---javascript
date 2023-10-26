@@ -4,12 +4,13 @@ import news3 from "../../../assets/news3.png"
 import Button from '../../Generics/Button';
 import Articles from "./Articles";
 
-export const ArticleNewsSection = () => {
+const ArticleNewsSection = () => {
     const article = [
         {img: news1, alt: "a smiling woman sitting and looking at someone", spanText: "Business", title: "How To Use Digitalization In The Classroom", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
         {img: news2, alt: "the intro text for chat gpt", spanText: "Business", title: "How To Implement Chat GPT In Your Projects", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
         {img: news3, alt: "a phone and two books about css and javascript lying on a desk", spanText: "Business", title: "The Guide To Support Modern CSS Design", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."}
     ]
+    
     return (
         <section className="news-section">
             <div className="container">

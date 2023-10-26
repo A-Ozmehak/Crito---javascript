@@ -2,7 +2,7 @@ import "../css/global.css"
 import FooterLogo from "../assets/LogoWhite.svg"
 import FooterLines from "../assets/lines-footer.png"
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer>
             <div className="background-lines">

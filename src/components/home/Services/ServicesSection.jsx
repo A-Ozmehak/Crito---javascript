@@ -2,7 +2,7 @@ import lines from "../../../assets/service-line.png"
 import ServiceBox from "./ServiceBox"
 import Button from "../../Generics/Button"
 
-export const ServicesSection = () => {
+const ServicesSection = () => {
     const services = [
         { title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
         { title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." },
