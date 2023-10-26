@@ -84,7 +84,7 @@ body {
                 line-height: 32px;
             }
 
-            a {
+            button {
                 margin-right: 0;
                 display: block;
                 margin-top: 30px;
@@ -162,9 +162,10 @@ body {
             }
     
             .btn {
-                display: block;
-                a {
-                    display: block;
+                // display: block;
+                width: 100%;
+                button {
+                    width: 100%;
                 }
     
                 @media (min-width: 1200px) {
@@ -535,7 +536,7 @@ body {
                     margin: 48px 0;
 
                     &:hover {
-                        background-color: $primary-color;
+                        background-color: $black;
                     }
                 }
             }
@@ -788,7 +789,7 @@ body {
             }
     
             .btn {
-                a {
+                button {
                     margin-bottom: 48px;
                     width: 221px;
                     height: 56px;
@@ -1195,6 +1196,19 @@ body {
                 @media (min-width: 1200px) {
                     margin-right: 20px;
                 }
+            }
+
+            .error {
+                color: $red;
+                border: 1px solid $red;
+            }
+
+            .show {
+                display: block;
+            }
+
+            .hide {
+                display: none;
             }
         
             a {

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
+.news-section .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.news-section .container h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  padding-top: 90px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .news-section .container h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .news-section .container h2 {
+    font-size: 45px;
+  }
+}
+.news-section .container .content-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .news-section .container .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .news-section .container .content-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.news-section .container .content-container .news-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .news-section .container .content-container .news-content {
+    margin-right: 32px;
+  }
+}
+.news-section .container .content-container .news-content img {
+  width: 100%;
+  height: 230px;
+}
+@media (min-width: 1200px) {
+  .news-section .container .content-container .news-content img {
+    width: 350px;
+  }
+}
+@media (min-width: 1400px) {
+  .news-section .container .content-container .news-content img {
+    width: 420px;
+  }
+}
+.news-section .container .content-container .news-content span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  font-style: normal;
+  text-align: left;
+  color: #6a6c71;
+  margin-top: 16px;
+}
+.news-section .container .content-container .news-content h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.news-section .container .content-container .news-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-bottom: 64px;
+}/*# sourceMappingURL=articles.css.map */

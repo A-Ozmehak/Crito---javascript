@@ -53,7 +53,7 @@ export const ProjectSection = () => {
                 </div>
             </div>
             <div className="center-content">
-                <Button type="black" text="All Recent Projects" url="/projects" />
+                <Button color="black" text="All Recent Projects" url="/projects" />
             </div>
         </div>
     </section>

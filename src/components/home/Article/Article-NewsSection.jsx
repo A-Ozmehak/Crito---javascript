@@ -12,36 +12,36 @@ export const ArticleNewsSection = () => {
     ]
     return (
         <section className="news-section">
-        <div className="container">
-            <div className="section-title">
-                <div>
-                    <p>Article & News</p>
-                    <h2>Get Every Single Articles & News</h2>
-                </div>
-                    <div className="btn">
-                        <Button type="transparent" text="View Articles" url="/news" />
+            <div className="container">
+                <div className="section-title">
+                    <div>
+                        <p>Article & News</p>
+                        <h2>Get Every Single Articles & News</h2>
                     </div>
-            </div>
-            <div className="content-container">
+                        <div className="btn">
+                            <Button color="transparent" text="View Articles" url="/news" />
+                        </div>
+                </div>
+                <div className="content-container">
                 
-                {
-                    article.map((article, index) => {
-                        return (
-                            <Articles key={index} img={article.img} alt={article.alt} spanText={article.spanText} title={article.title} description={article.description} />
-                        )
-                    })
-                }
+                    {
+                        article.map((article, index) => {
+                            return (
+                                <Articles key={index} img={article.img} alt={article.alt} spanText={article.spanText} title={article.title} description={article.description} />
+                            )
+                        })
+                    }
 
+                </div>
+                <div className="dots">
+                    <div className="pagination-dot"></div>
+                    <div className="grey-dot pagination-dot"></div>
+                    <div className="grey-dot pagination-dot"></div>
+                    <div className="grey-dot pagination-dot"></div>
+                    <div className="grey-dot pagination-dot"></div>
+                </div>
             </div>
-            <div className="dots">
-                <div className="pagination-dot"></div>
-                <div className="grey-dot pagination-dot"></div>
-                <div className="grey-dot pagination-dot"></div>
-                <div className="grey-dot pagination-dot"></div>
-                <div className="grey-dot pagination-dot"></div>
-            </div>
-        </div>
-    </section>
+        </section>
     )
 }
 

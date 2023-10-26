@@ -7,7 +7,7 @@ import "../css/global.css"
 import "../css/contact.css"
 import Footer from '../components/Footer'
 
-export const Contact = () => {
+const Contact = () => {
     return (
         <div>
             <Header />

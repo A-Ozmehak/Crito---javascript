@@ -57,7 +57,7 @@ export const TeamSection = () => {
                         <h2>Experience Team Members</h2>
                     </div>
                     <div className="btn">
-                        <Button type="yellow" text="Browse Team" url="/team" />
+                        <Button color="yellow" text="Browse Team" url="/team" />
                     </div>
                 </div>
                 <div className="team-members">
@@ -95,7 +95,7 @@ export const TeamSection = () => {
                         
                     </div>
                     <div className="btn">
-                        <Button type="black" text="All Reviews" url="/reviews" />
+                        <Button color="black" text="All Reviews" url="/reviews" />
                     </div>
                 </div>
             </div>

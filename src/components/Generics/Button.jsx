@@ -1,9 +1,10 @@
 // Removed unused import statement
 import PropTypes from 'prop-types'
 
-const YellowBtn = ({ type, text, url }) => {
+const YellowBtn = ({ color, type, text, url }) => {
+
     const getButton = () => {
-        switch(type) {
+        switch(color) {
             case "yellow":
                 return "btn-yellow"
             case "transparent":
@@ -12,16 +13,18 @@ const YellowBtn = ({ type, text, url }) => {
                 return "btn-black"
         }
     }
+
     return (
-        <a className={getButton()} href={url}>
+        <button className={getButton()} href={url} type={type}>
                 {text}
                 <i className="fa-solid fa-arrow-up-right icon-left"></i>
-        </a>
+        </button>
     )
 }
 
 YellowBtn.propTypes = {
-    type: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    color: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired
 }

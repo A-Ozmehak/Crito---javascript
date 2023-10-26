@@ -28,7 +28,7 @@ export const ServicesSection = () => {
                 }               
             </div>
             <div className="button-container">
-                <Button type="transparent" text="Browse Services" url="/services" />
+                <Button color="transparent" text="Browse Services" url="/services" />
             </div>
         </div>
     </section>

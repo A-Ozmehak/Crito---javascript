@@ -35,12 +35,12 @@ export const Header = () => {
                         </div>
                         <div className="main-menu">
                             <nav>
-                                <Link to="/">Home</Link>
+                                <Link to="/" className="active">Home</Link>
                                 <Link to="/service">Service</Link>
                                 <Link to="/news">News</Link>
                                 <Link to="/contact">Contact</Link>
                             </nav>
-                            <Button type="yellow" text="Login" url="/login" />
+                            <Button color="yellow" text="Login" url="/login" />
                         </div>
                     </div>  
                 </div> 

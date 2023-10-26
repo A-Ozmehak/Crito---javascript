@@ -64,13 +64,13 @@ body {
   font-size: 20px;
   line-height: 32px;
 }
-.showcase-section .container .showcase-left a {
+.showcase-section .container .showcase-left button {
   margin-right: 0;
   display: block;
   margin-top: 30px;
 }
 @media (min-width: 768px) {
-  .showcase-section .container .showcase-left a {
+  .showcase-section .container .showcase-left button {
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 150px;
@@ -139,10 +139,10 @@ body {
   }
 }
 .features-section .container .section-title .btn {
-  display: block;
+  width: 100%;
 }
-.features-section .container .section-title .btn a {
-  display: block;
+.features-section .container .section-title .btn button {
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .features-section .container .section-title .btn {
@@ -491,7 +491,7 @@ body {
   margin: 48px 0;
 }
 .our-services-section .container .button-container button:hover {
-  background-color: #f9d783;
+  background-color: #191919;
 }
 
 .choose-us-section {
@@ -722,14 +722,14 @@ body {
 .team-section .container .section-title .title h2 {
   padding: 16px 0;
 }
-.team-section .container .section-title .btn a {
+.team-section .container .section-title .btn button {
   margin-bottom: 48px;
   width: 221px;
   height: 56px;
   border: 1px solid #191919;
 }
 @media (min-width: 1200px) {
-  .team-section .container .section-title .btn a {
+  .team-section .container .section-title .btn button {
     margin-right: 0;
   }
 }
@@ -1111,6 +1111,16 @@ body {
   .newsletter-section .container form input {
     margin-right: 20px;
   }
+}
+.newsletter-section .container form .error {
+  color: red;
+  border: 1px solid red;
+}
+.newsletter-section .container form .show {
+  display: block;
+}
+.newsletter-section .container form .hide {
+  display: none;
 }
 .newsletter-section .container form a {
   width: 100%;

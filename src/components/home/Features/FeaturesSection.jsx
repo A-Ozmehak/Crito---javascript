@@ -17,7 +17,7 @@ export const FeaturesSection = () => {
                     <p>Features</p>
                     <h2>Our Accounting is trusted by thousand of companies</h2>
                     <div className="btn">
-                        <Button type="yellow" text="Learn more" url="/features" />
+                        <Button color="yellow" text="Learn more" url="/features" />
                     </div>
                 </div>
                 <div className="features">
