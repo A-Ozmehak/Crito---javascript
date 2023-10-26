@@ -1,6 +1,7 @@
 import companyLines from "../../assets/company-line.svg";
 import companyImg from "../../assets/about.png";
 import Button from "../Generics/Button";
+import { Link } from "react-router-dom";
 
 const AboutCompanySection = () => {
     return (
@@ -15,7 +16,7 @@ const AboutCompanySection = () => {
                 <div className="buttons-container">
                     <Button color="black" text="Learn More" url="/about" className="learn-more-btn" />
                     <div className="video-btn-container">
-                        <a className="play-btn"><i className="fa-solid fa-play"></i></a>
+                        <Link className="play-btn"><i className="fa-solid fa-play"></i></Link>
                         <span className="intro-video">Intro Video</span>
                     </div>
                 </div>

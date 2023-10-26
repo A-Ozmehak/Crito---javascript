@@ -1,6 +1,7 @@
 import "../css/global.css"
 import FooterLogo from "../assets/LogoWhite.svg"
 import FooterLines from "../assets/lines-footer.png"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
@@ -17,31 +18,31 @@ const Footer = () => {
                     <div className="footer-links">
                         <ul>
                             <li className="footer-link-title">Company</li>
-                            <li><a href="/">About</a></li>
-                            <li><a href="/service">Features</a></li>
-                            <li><a href="/about">Works</a></li>
-                            <li><a href="/contact">Career</a></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/features">Features</Link></li>
+                            <li><Link to="/works">Works</Link></li>
+                            <li><Link to="/career">Career</Link></li>
                         </ul>
                         <ul>
                             <li className="footer-link-title">Help</li>
-                            <li><a href="/">Customer Support</a></li>
-                            <li><a href="/service">Delivery Details</a></li>
-                            <li><a href="/about">Terms & Conditions</a></li>
-                            <li><a href="/contact">Privacy Policy</a></li>
+                            <li><Link to="/support">Customer Support</Link></li>
+                            <li><Link to="/delivery-details">Delivery Details</Link></li>
+                            <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
                         <ul>
                             <li className="footer-link-title">Resources</li>
-                            <li><a href="/">Free eBooks</a></li>
-                            <li><a href="/service">Development Tutorial</a></li>
-                            <li><a href="/about">How to - Blog</a></li>
-                            <li><a href="/contact">Youtube Playlist</a></li>
+                            <li><Link to="/free-ebooks">Free eBooks</Link></li>
+                            <li><Link to="/development-tutorial">Development Tutorial</Link></li>
+                            <li><Link to="/how-to">How to - Blog</Link></li>
+                            <li><Link to="/youtube">Youtube Playlist</Link></li>
                         </ul>
                         <ul>
                             <li className="footer-link-title">Link</li>
-                            <li><a href="/">Free eBooks</a></li>
-                            <li><a href="/service">Development Tutorial</a></li>
-                            <li><a href="/about">How to - Blog</a></li>
-                            <li><a href="/contact">Youtube Playlist</a></li>
+                            <li><Link to="/free-ebooks">Free eBooks</Link></li>
+                            <li><Link to="/development-tutorial">Development Tutorial</Link></li>
+                            <li><Link to="/how-to">How to - Blog</Link></li>
+                            <li><Link to="/youtube">Youtube Playlist</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -51,10 +52,10 @@ const Footer = () => {
                     <div className="footer-bottom-part">
                         <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
                         <div className="social-media">
-                            <a href="https://facebook.com" className="active"><i className="fa-brands fa-facebook"></i></a>
-                            <a href="https://twitter.com"><i className="fa-brands fa-twitter"></i></a>
-                            <a href="https://instagram.com"><i className="fa-brands fa-instagram"></i></a>
-                            <a href="https://linkedin.com"><i className="fa-brands fa-linkedin"></i></a>
+                            <Link to="https://facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></Link>
+                            <Link to="https://twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></Link>
+                            <Link to="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></Link>
+                            <Link to="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
                         </div>
                     </div>
                 </div>

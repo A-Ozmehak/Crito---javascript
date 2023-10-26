@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const ServiceBox = ({ title, description }) => {
   return (
@@ -7,7 +8,7 @@ const ServiceBox = ({ title, description }) => {
             <h3 className="service-title">{ title }</h3>
             <p>{ description }</p>
             <div className="rounded-border-arrow">
-                <a><i className="fa-solid fa-arrow-right"></i></a>
+                <Link><i className="fa-solid fa-arrow-right"></i></Link>
             </div>
         </div>
   )

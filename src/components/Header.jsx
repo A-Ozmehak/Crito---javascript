@@ -1,6 +1,6 @@
 import "../css/global.css"
 import Logo from "../assets/Logo.svg"
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Button from "./Generics/Button"
 
 const Header = () => {
@@ -8,8 +8,8 @@ const Header = () => {
         <header>
             <div className="container">
                 <div className="header-container">
-                    <a className="logo" href="/"><img src={Logo} alt="the logo for the company Crito" /></a>
-                    <a className="hamburger-btn"><i className="fa-solid fa-bars"></i></a>
+                    <Link className="logo" to="/"><img src={Logo} alt="the logo for the company Crito" /></Link>
+                    <Link className="hamburger-btn"><i className="fa-solid fa-bars"></i></Link>
                     <div className="menu">
                         <div className="top-menu">
                             <div className="contact-information">
@@ -27,18 +27,18 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="social-media">
-                                <a href="https://facebook.com" className="active"><i className="social-media-icon fa-brands fa-facebook"></i></a>
-                                <a href="https://twitter.com"><i className="social-media-icon fa-brands fa-twitter"></i></a>
-                                <a href="https://instagram.com"><i className="social-media-icon fa-brands fa-instagram"></i></a>
-                                <a href="https://linkedin.com"><i className="fa-brands fa-linkedin"></i></a>
+                                <Link to="https://facebook.com" target="_blank"><i className="social-media-icon fa-brands fa-facebook"></i></Link>
+                                <Link to="https://twitter.com" target="_blank"><i className="social-media-icon fa-brands fa-twitter"></i></Link>
+                                <Link to="https://instagram.com" target="_blank"><i className="social-media-icon fa-brands fa-instagram"></i></Link>
+                                <Link to="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
                             </div>
                         </div>
                         <div className="main-menu">
                             <nav>
-                                <Link to="/" className="active">Home</Link>
-                                <Link to="/service">Service</Link>
-                                <Link to="/news">News</Link>
-                                <Link to="/contact">Contact</Link>
+                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/service">Service</NavLink>
+                                <NavLink to="/news">News</NavLink>
+                                <NavLink to="/contact">Contact</NavLink>
                             </nav>
                             <Button color="yellow" text="Login" url="/login" />
                         </div>
