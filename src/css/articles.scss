@@ -44,10 +44,15 @@ $font-dm-sans: "DM Sans", sans-serif;
                 font-weight: bold;
                 line-height: 55px;
                 font-style: normal;
-                text-align: left;
+                text-align: center;
                 color: #191919;
                 padding-top: 90px;
                 margin-bottom: 20px;
+
+                @media (min-width: 992px) {
+                    text-align: left;
+                    margin: 0;
+                }
     
                 @media (min-width: 1200px) {
                     font-size: 35px;
@@ -62,7 +67,6 @@ $font-dm-sans: "DM Sans", sans-serif;
         .content-container {
             display: flex;
             flex-direction: column;
-            // align-items: center;
             justify-content: center;
             margin-top: 40px;
 
@@ -145,6 +149,7 @@ $font-dm-sans: "DM Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
 
     .page-item {
         margin: 0 10px;
@@ -174,6 +179,4 @@ $font-dm-sans: "DM Sans", sans-serif;
         font-weight: 500;
         padding: 5px 15px;
     }
-
-   
 }
