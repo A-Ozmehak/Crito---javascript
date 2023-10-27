@@ -2,7 +2,7 @@ import Header from '../components/Header'
 // import "../css/global.css"
 // import "../css/contact.css"
 import "../css/articles.css"
-import TitleSection from '../components/news/Title-section'
+import TitleSection from '../components/TitleSection/TitleSection'
 import Articles from '../components/news/Articles'
 import ArticlePagination from '../components/news/ArticlePagination'
 import Footer from '../components/Footer'
@@ -12,7 +12,7 @@ const ArticlesPage = () => {
     return (
         <div>
             <Header />
-            <TitleSection />
+            <TitleSection title="News & Articles" />
             <Articles />
             <ArticlePagination />
             <NewsletterSection />
