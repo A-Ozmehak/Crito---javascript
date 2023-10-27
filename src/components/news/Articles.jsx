@@ -18,11 +18,11 @@ const News = () => {
                 <div id="result" className="content-container">
                     {articles.map((article) => (
                         <Link key={article.id} to={`/news/${article.id}`}>
-                            <div className="news-content" >
+                            <div className="news-content">
                                 <img src={article.imageUrl} alt={article.title} />
                                 <span>{article.category}</span>
                                 <h3>{article.title}</h3>
-                                <span>{article.content}</span>
+                                <p>{article.content}</p>
                             </div>
                         </Link>
                     ))}

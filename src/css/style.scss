@@ -233,10 +233,12 @@ body {
             }
     
             .buttons-container {
-                margin-top: 80px;
+                margin-top: 100px;
     
                 @media (min-width: 768px) {
                     display: flex;
+                    margin-bottom: 50px;
+                    margin-top: 70px;
                 }
     
                 .learn-more-btn {

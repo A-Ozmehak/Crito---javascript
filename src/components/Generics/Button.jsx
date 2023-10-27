@@ -15,8 +15,8 @@ const YellowBtn = ({ color, type, text, url }) => {
 
     return (
         <button className={getButton()} href={url} type={type}>
-                {text}
-                <i className="fa-solid fa-arrow-up-right icon-left"></i>
+            {text}
+            <i className="fa-solid fa-arrow-up-right icon-left"></i>
         </button>
     )
 }

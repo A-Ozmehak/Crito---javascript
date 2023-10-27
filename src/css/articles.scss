@@ -58,25 +58,13 @@ $font-dm-sans: "DM Sans", sans-serif;
                     font-size: 45px;
                 }
             }
-            // .btn {
-            //     a {
-            //         width: 221px;
-            //         height: 56px;
-            //         margin-bottom: 16px;
-        
-            //         @media (min-width: 1200px) {
-            //             margin-bottom: 0;
-            //         }
-            //     }
-            // }
-        // }
 
         .content-container {
             display: flex;
             flex-direction: column;
             // align-items: center;
-            // justify-content: center;
-            // margin-top: 40px;
+            justify-content: center;
+            margin-top: 40px;
 
             @media (min-width: 992px) {
                 display: grid;
@@ -90,6 +78,7 @@ $font-dm-sans: "DM Sans", sans-serif;
             .news-content {
                 display: flex;
                 flex-direction: column;
+                height: 100%;
     
                 @media (min-width: 576px) {
                     // width: 400px;
@@ -98,6 +87,7 @@ $font-dm-sans: "DM Sans", sans-serif;
                 @media (min-width: 1200px) {
                     margin-right: 32px;
                     // width: 350px;
+                    height: 500px;
                 }
     
                 img {
@@ -149,4 +139,41 @@ $font-dm-sans: "DM Sans", sans-serif;
             }
         }
     } 
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .page-item {
+        margin: 0 10px;
+
+        a {
+            border-radius: 5px;
+        }
+    }
+
+    .active-page a {
+        color: $white;
+        background-color: $black;
+    }
+
+    span {
+        color: $black;
+        font-family: "DM Sans";
+        font-size: 21px;
+        font-weight: 500;
+        padding: 5px 0px;
+    }
+
+    .page-link {
+        color: $black;
+        font-family: "DM Sans";
+        font-size: 21px;
+        font-weight: 500;
+        padding: 5px 15px;
+    }
+
+   
 }
