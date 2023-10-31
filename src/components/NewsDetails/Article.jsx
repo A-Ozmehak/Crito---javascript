@@ -13,12 +13,17 @@ const Article = () => {
           .catch((error) => console.error(error));
       }, [id]);
 
+      const formatDate = (dateString) => {
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        return new Date(dateString).toLocaleDateString(undefined, options);
+    }
+
     return (
         <div id="result">
             <div key={article.id}>
                 <h3>{article.title}</h3>
                 <div className="article-details">
-                    <p>{article.published}</p>
+                    <p>{formatDate(article.published)}</p>
                     <div className="yellow-dot"></div>
                     <p>{article.category}</p>
                     <div className="yellow-dot"></div>
