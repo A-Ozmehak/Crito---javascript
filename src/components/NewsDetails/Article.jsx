@@ -17,11 +17,15 @@ const Article = () => {
         <div id="result">
             <div key={article.id}>
                 <h3>{article.title}</h3>
-                <p>{article.published}</p>
-                <p>{article.category}</p>
-                <p>{article.author}</p>
-                <img src={article.image} alt={article.title} /> 
-                <span>{article.content}</span>
+                <div className="article-details">
+                    <p>{article.published}</p>
+                    <div className="yellow-dot"></div>
+                    <p>{article.category}</p>
+                    <div className="yellow-dot"></div>
+                    <p>{article.author}</p>
+                </div>
+                <img src={article.imageUrl} alt={article.title} /> 
+                <p className="content">{article.content}</p>
             </div>
         </div>
     )

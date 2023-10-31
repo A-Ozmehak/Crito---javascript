@@ -15,7 +15,7 @@ const News = () => {
         <div className="news-section">
             <div className="container">
                 <h2>Our News & Articles</h2>
-                <div id="result" className="content-container">
+                <div id="news-result" className="content-container">
                     {articles.map((article) => (
                         <Link key={article.id} to={`/news/${article.id}`}>
                             <div className="news-content">

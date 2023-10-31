@@ -1,6 +1,5 @@
 import Header from '../components/Header'
-// import "../css/global.css"
-// import "../css/contact.css"
+import "../css/global.css"
 import "../css/articles.css"
 import TitleSection from '../components/TitleSection/TitleSection'
 import Articles from '../components/news/Articles'
