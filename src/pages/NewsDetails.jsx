@@ -15,7 +15,7 @@ const ArticleDetailPage = () => {
         <div>
             <Header />
             <TitleSection title="News & Articles" />
-            <div className="container">
+            <div className="news-detail-content">
                 <div className="article-content-container">
                     <Article />
                 </div>

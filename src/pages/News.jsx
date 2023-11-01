@@ -1,9 +1,9 @@
 import Header from '../components/Header'
 import "../css/global.css"
-import "../css/articles.css"
+import "../css/news.css"
 import TitleSection from '../components/TitleSection/TitleSection'
-import Articles from '../components/news/Articles'
-import ArticlePagination from '../components/news/ArticlePagination'
+import Articles from '../components/News/Articles'
+import ArticlePagination from '../components/News/ArticlePagination'
 import Footer from '../components/Footer'
 import NewsletterSection from '../components/NewsletterSection'
 

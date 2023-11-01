@@ -24,20 +24,6 @@ $font-dm-sans: "DM Sans", sans-serif;
         display: grid;
         grid-template-columns: 1fr;
 
-        // .section-title {
-        //         display: flex;
-        //         flex-direction: column;
-        //         justify-content: center;
-        //         align-items: center;
-        //         padding-bottom: 10px;
-    
-                // @media (min-width: 992px) {
-                //     display: flex;
-                //     flex-direction: row;
-                //     justify-content: space-between;
-                //     margin-bottom: 48px;
-                // }
-
             h2 {
                 font-family: "DM Sans";
                 font-size: 45px;
@@ -84,28 +70,50 @@ $font-dm-sans: "DM Sans", sans-serif;
                 flex-direction: column;
                 height: 100%;
     
-                @media (min-width: 576px) {
-                    // width: 400px;
-                }
-    
                 @media (min-width: 1200px) {
                     margin-right: 32px;
-                    // width: 350px;
                     height: 500px;
                 }
-    
-                img {
-                    width: 100%;
-                    height: 230px;
 
-                    @media (min-width: 1200px) {
-                        width: 350px;
+                .img-container {
+                    position: relative;
+                    .date-tag {
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        background-color: $primary-color;
+                        color: $white;
+                        padding: 5px 5px;
+                        height: 70px;
+                        width: 56px;
+
+                        p {
+                            font-family: $font-dm-sans;
+                            font-size: 18px;
+                            font-weight: 900;
+                            line-height: 33px;
+                            font-style: normal;
+                            text-align: left;
+                            color: #191919;
+                            text-align: center;
+                        }
                     }
 
-                    @media (min-width: 1400px) {
-                        width: 420px;
+                    img {
+                        width: 100%;
+                        height: 230px;
+    
+                        @media (min-width: 1200px) {
+                            width: 350px;
+                        }
+    
+                        @media (min-width: 1400px) {
+                            width: 420px;
+                        }
                     }
                 }
+    
+            
     
                 span {
                     font-family: $font-inter;

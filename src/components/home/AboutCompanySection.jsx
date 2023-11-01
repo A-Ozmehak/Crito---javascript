@@ -2,6 +2,7 @@ import companyLines from "../../assets/company-line.svg";
 import companyImg from "../../assets/about.png";
 import Button from "../Generics/Button";
 import { Link } from "react-router-dom";
+import "../../css/style.css";
 
 const AboutCompanySection = () => {
     return (
@@ -14,7 +15,9 @@ const AboutCompanySection = () => {
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. <br/><br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
                     <div className="buttons-container">
-                        <Button color="black" text="Learn More" url="/about" className="learn-more-btn" />
+                        <div>
+                            <Button color="black" text="Learn More" url="/about" className="learn-more-btn" />
+                        </div>
                         <div className="video-btn-container">
                             <Link className="play-btn"><i className="fa-solid fa-play"></i></Link>
                             <span className="intro-video">Intro Video</span>

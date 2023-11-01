@@ -15,7 +15,7 @@ import NewsletterSection from '../components/NewsletterSection'
 
 export const Home = () => {
     return (
-            <div>
+        <div>
             <Header />
             <ShowCaseSection />
             <Logos />

@@ -27,7 +27,11 @@ const ChooseUsSection = () => {
 
     return (
         <section className="choose-us-section">
-            <div className="img-bg"></div>
+            <div className="img-bg">
+                <div className="img-content">
+                    <img src={chooseUs} alt="two women sitting and talking" />
+                </div>
+            </div>
             <div className="container">
                 <div className="text-content">
                     <div className="section-title">
@@ -42,9 +46,7 @@ const ChooseUsSection = () => {
                     }
                    
                 </div>
-                <div className="img-content">
-                    <img src={chooseUs} alt="two women sitting and talking" />
-                </div>
+               
             </div>
         </section>
     )

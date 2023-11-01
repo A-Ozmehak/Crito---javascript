@@ -1,4 +1,4 @@
-import "../css/global.css"
+// import "../css/global.css"
 import Logo from "../assets/Logo.svg"
 import { NavLink, Link } from 'react-router-dom';
 import Button from "./Generics/Button"
