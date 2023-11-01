@@ -143,6 +143,9 @@ header .header-container .hamburger-btn:hover {
     display: none;
   }
 }
+header .header-container .offcanvas-container {
+  background-color: red;
+}
 header .header-container .menu {
   display: none;
   flex: 1;

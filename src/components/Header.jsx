@@ -1,15 +1,23 @@
-// import "../css/global.css"
-import Logo from "../assets/Logo.svg"
+import Logo from "../assets/Logo.svg";
 import { NavLink, Link } from 'react-router-dom';
-import Button from "./Generics/Button"
+import Button from "./Generics/Button";
+import MobileMenu from "./MobilMenu";
+import { useState } from 'react';
+import '../css/global.css';
 
 const Header = () => {
+    const [show, setShow] = useState(false);
+
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
+
     return (
         <header>
             <div className="container">
                 <div className="header-container">
                     <Link className="logo" to="/"><img src={Logo} alt="the logo for the company Crito" /></Link>
-                    <Link className="hamburger-btn"><i className="fa-solid fa-bars"></i></Link>
+                    <Link className="hamburger-btn" onClick={handleShow}><i className="fa-solid fa-bars"></i></Link>
+                    <MobileMenu show={show} placement="top" onHide={handleClose} />
                     <div className="menu">
                         <div className="top-menu">
                             <div className="contact-information">
