@@ -6,11 +6,9 @@ import logo from '../assets/Logo.svg';
 const MobileMenu = ({ ...props }) => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-
   return (
     <>
-      <Offcanvas show={show} onHide={handleClose} {...props}>
+      <Offcanvas show={show} {...props}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <img src={logo} alt="the logo for the company Crito" />
