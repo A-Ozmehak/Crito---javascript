@@ -10,6 +10,8 @@ const ContactForm = () => {
     });
     const [showToast, setShowToast] = useState(false);
 
+    const closeToast = () => setShowToast(false);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
@@ -18,7 +20,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         // Validation
-        if (formData.name.length < 1 || formData.message.length < 1) {
+        if (formData.name.length < 1 || formData.message.length < 1 && /^[a-zA-Z\s]*$/.test(formData.name)) {
             alert('Name and message must be at least 1 character long');
             return;
         }
@@ -45,11 +47,9 @@ const ContactForm = () => {
                 });
                 setShowToast(true);
             }
-            if (response.headers.get('content-type').includes('application/json')) {
-                return response.json();
-            } else {
-                throw new Error('Server response is not JSON');
-            } 
+           else {
+                alert('Something went wrong. Please try again later.');
+            }
         })
     }   
 
@@ -58,12 +58,12 @@ const ContactForm = () => {
             <div className="container">
                 <h2>Leave us a message for any information.</h2>
                 <form onSubmit={handleSubmit} method="post" noValidate>
-                    <input id="name" type="text" placeholder="Name*" name="name" title="name" tabIndex="1" onKeyUp={handleChange} />
-                    <input id="email" type="email" placeholder="Email*" name="email" title="email" tabIndex="2" onKeyUp={handleChange} />
-                    <textarea className="textarea" id="message" placeholder="Your Message*" name="message" onKeyUp={handleChange}></textarea>
+                    <input id="name" type="text" placeholder="Name*" name="name" title="name" tabIndex="1" onChange={handleChange} value={formData.name} required />
+                    <input id="email" type="email" placeholder="Email*" name="email" title="email" tabIndex="2" onChange={handleChange} value={formData.email} required />
+                    <textarea className="textarea" id="message" placeholder="Your Message*" name="message" tabIndex="3" onChange={handleChange} value={formData.message} required></textarea>
                     <Button color="yellow" type="submit" text="Send Message" url="" />
                 </form>
-                {showToast && <ToastNotification />}
+                {showToast && <ToastNotification closeToast={closeToast} />}
             </div>
         </section>
     )

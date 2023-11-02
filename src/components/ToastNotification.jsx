@@ -1,8 +1,9 @@
 import Toast from 'react-bootstrap/Toast';
+import PropTypes from 'prop-types';
 
-const ToastNotification = () => {
+const ToastNotification = ({ closeToast }) => {
   return (
-    <Toast>
+    <Toast onClick={closeToast}>
       <Toast.Header>
         <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
         <strong className="me-auto">Contact form</strong>
@@ -11,5 +12,9 @@ const ToastNotification = () => {
     </Toast>
   );
 }
+
+ToastNotification.propTypes = {
+  closeToast: PropTypes.func.isRequired,
+};
 
 export default ToastNotification;
