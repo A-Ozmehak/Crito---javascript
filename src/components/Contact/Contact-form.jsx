@@ -1,73 +1,119 @@
 import Button from "../Generics/Button";
 import { useState } from "react";
 import ToastNotification from "../ToastNotification";
+import { useFormik } from "formik";
+import * as Yup from 'yup';
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
     const [showToast, setShowToast] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const closeToast = () => setShowToast(false);
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    }
+    const emailRegex = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const form = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            message: ''
+        },
+        validationSchema: Yup.object({
+            name: Yup.string()
+                .required('Name is required')
+                .min(2, 'Name must be at least 2 characters long'),
+            email: Yup.string()
+                .required('Email is required')
+                .matches(emailRegex, 'Email is not valid'),
+            message: Yup.string()
+                .required('Message is required')
+                .min(10, 'Message must be at least 10 characters long')
+        }),
 
-        // Validation
-        if (formData.name.length < 1 || formData.message.length < 1 && /^[a-zA-Z\s]*$/.test(formData.name)) {
-            alert('Name and message must be at least 1 character long');
-            return;
-        }
+        onSubmit: async (values, { resetForm }) => {
+            try {
+                const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+                    method: 'post',
+                    headers: {
+                        'content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(values),
+                })
+                switch (result.status) {
+                    case 200:
+                        setShowToast(true);
+                        resetForm();
+                        break;
+                    case 400:
+                        throw new Error('Something went wrong'); 
+                }
 
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if (!emailRegex.test(formData.email)) {
-            alert('Please enter a valid email');
-            return;
-        }
-
-        fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        })
-        .then(response => {
-            if (response.status === 200) {
-                setFormData({
-                    name: '',
-                    email: '',
-                    message: ''
-                });
-                setShowToast(true);
+            } catch (error) {
+                setErrorMessage(error.message);
             }
-           else {
-                alert('Something went wrong. Please try again later.');
-            }
-        })
-    }   
+        }
+    })
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     email: '',
+    //     message: ''
+    // });
+
+
+    // const handleChange = (e) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // }
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setErrorMessage('');
+
+    //     const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+    //         method: 'post',
+    //         headers: {
+    //             'content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify(formData),
+    //     })
+
+    //     clearForm();
+
+    //     switch (result.status) {
+    //         case 200:
+    //             setShowToast(true);
+    //             break;
+    //         case 400:
+    //             setErrorMessage('Något gick fel. Kontrollera värderna');
+    //             break;   
+    //     }
+    // }
+    
+    // const clearForm = () => {
+    //     setFormData({
+    //         name: '',
+    //         email: '',
+    //         message: ''
+    //     });
+    // }
 
     return (
         <section className="contact-form">
             <div className="container">
                 <h2>Leave us a message for any information.</h2>
-                <form onSubmit={handleSubmit} method="post" noValidate>
-                    <input id="name" type="text" placeholder="Name*" name="name" title="name" tabIndex="1" onChange={handleChange} value={formData.name} required />
-                    <input id="email" type="email" placeholder="Email*" name="email" title="email" tabIndex="2" onChange={handleChange} value={formData.email} required />
-                    <textarea className="textarea" id="message" placeholder="Your Message*" name="message" tabIndex="3" onChange={handleChange} value={formData.message} required></textarea>
+                <p className="errorMessage">{errorMessage}</p>
+                <form onSubmit={form.handleSubmit} noValidate>
+                    <input type="text" placeholder="Name*" name="name" title="name" tabIndex="1" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur} />
+                    <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.name && form.errors.name ? form.errors.name : ''}</p>
+                    <input type="email" placeholder="Email*" name="email" title="email" tabIndex="2" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur} />
+                    <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.email && form.errors.email ? form.errors.email : ''}</p>
+                    <textarea className="textarea" id="message" placeholder="Your Message*" name="message" tabIndex="3" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur}></textarea>
+                    <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.message && form.errors.message ? form.errors.message : ''}</p>
                     <Button color="yellow" type="submit" text="Send Message" url="" />
                 </form>
                 {showToast && <ToastNotification closeToast={closeToast} />}
             </div>
         </section>
     )
-
 }
 
-export default ContactForm
+export default ContactForm;
