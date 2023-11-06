@@ -3,7 +3,6 @@ import { NavLink, Link } from 'react-router-dom';
 import Button from "./Generics/Button";
 import MobileMenu from "./MobilMenu";
 import { useState } from 'react';
-import '../css/global.css';
 
 const Header = () => {
     const [show, setShow] = useState(false);

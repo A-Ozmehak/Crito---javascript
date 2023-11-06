@@ -1,7 +1,5 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import "../css/global.css"
-import "../css/style.css"
 import ShowCaseSection from '../components/Home/ShowcaseSection'
 import Logos from '../components/Home/BrandLogos/LogosSection'
 import FeaturesSection from '../components/Home/Features/FeaturesSection'

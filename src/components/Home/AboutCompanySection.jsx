@@ -2,7 +2,6 @@ import companyLines from "../../assets/company-line.svg";
 import companyImg from "../../assets/about.png";
 import Button from "../Generics/Button";
 import { Link } from "react-router-dom";
-import "../../css/style.css";
 
 const AboutCompanySection = () => {
     return (

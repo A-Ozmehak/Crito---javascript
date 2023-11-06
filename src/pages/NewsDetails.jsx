@@ -1,7 +1,5 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import "../css/global.css";
-import "../css/newsDetails.css";
 import Article from '../components/NewsDetails/Article';
 import TitleSection from '../components/TitleSection/TitleSection';
 import ArticleNewsSection from '../components/Home/Article/Article-NewsSection';
