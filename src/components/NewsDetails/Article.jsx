@@ -3,11 +3,13 @@ import { useParams } from 'react-router-dom';
 import { useArticles } from "../../contexts/ArticleContext";
 
 const Article = () => {
-    const { article, getArticle } = useArticles();
+    const { article, getArticle, clearArticle } = useArticles();
     const { id } = useParams();
 
     useEffect(() => {
         getArticle(id);
+
+        return () => clearArticle();
     }, []);
 
     const formatDate = (dateString) => {
