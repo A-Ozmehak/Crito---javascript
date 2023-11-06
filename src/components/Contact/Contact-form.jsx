@@ -53,48 +53,6 @@ const ContactForm = () => {
             }
         }
     })
-    // const [formData, setFormData] = useState({
-    //     name: '',
-    //     email: '',
-    //     message: ''
-    // });
-
-
-    // const handleChange = (e) => {
-    //     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // }
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     setErrorMessage('');
-
-    //     const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
-    //         method: 'post',
-    //         headers: {
-    //             'content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(formData),
-    //     })
-
-    //     clearForm();
-
-    //     switch (result.status) {
-    //         case 200:
-    //             setShowToast(true);
-    //             break;
-    //         case 400:
-    //             setErrorMessage('Något gick fel. Kontrollera värderna');
-    //             break;   
-    //     }
-    // }
-    
-    // const clearForm = () => {
-    //     setFormData({
-    //         name: '',
-    //         email: '',
-    //         message: ''
-    //     });
-    // }
 
     return (
         <section className="contact-form">

@@ -1,37 +1,43 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
+import { useArticles } from "../../contexts/ArticleContext";
 
 const Article = () => {
-
-    const [article, setArticle] = useState({});
+    const { article, getArticle } = useArticles();
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-          .then((response) => response.json())
-          .then((data) => setArticle(data))
-          .catch((error) => console.error(error));
-      }, [id]);
+        getArticle(id);
+    }, []);
 
-      const formatDate = (dateString) => {
+    const formatDate = (dateString) => {
         const options = { year: 'numeric', month: 'short', day: 'numeric' };
         return new Date(dateString).toLocaleDateString(undefined, options);
     }
 
     return (
         <div id="result">
-            <div key={article.id}>
-                <h3>{article.title}</h3>
-                <div className="article-details">
-                    <p>{formatDate(article.published)}</p>
-                    <div className="yellow-dot"></div>
-                    <p>{article.category}</p>
-                    <div className="yellow-dot"></div>
-                    <p>{article.author}</p>
-                </div>
-                <img src={article.imageUrl} alt={article.title} /> 
-                <p className="content">{article.content}</p>
-            </div>
+            {
+                article ? 
+                (
+                    <div key={article.id}>
+                        <h3>{article.title}</h3>
+                        <div className="article-details">
+                            <p>{formatDate(article.published)}</p>
+                            <div className="yellow-dot"></div>
+                            <p>{article.category}</p>
+                            <div className="yellow-dot"></div>
+                            <p>{article.author}</p>
+                        </div>
+                        <img src={article.imageUrl} alt={article.title} /> 
+                        <p className="content">{article.content}</p>
+                    </div>
+                )
+                :
+                (
+                    <p>Loading...</p>
+                )
+            }
         </div>
     )
 }

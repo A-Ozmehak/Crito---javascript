@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import { useArticles } from "../../contexts/ArticleContext";
 
 const News = () => {
-    const [articles, setArticles] = useState([]);
+    const { articles } = useArticles();
 
-    useEffect(() => {
-        fetch("https://win23-assignment.azurewebsites.net/api/articles")
-          .then((response) => response.json())
-          .then((data) => setArticles(data))
-          .catch((error) => console.error(error));
-      }, []);
-
-      const formatDate = (dateString) => {
+    const formatDate = (dateString) => {
         const date = new Date(dateString);
         const month = date.toLocaleString('default', { month: 'short' });
         const day = date.getDate();
@@ -42,7 +35,6 @@ const News = () => {
             </div>
         </div>
     )
-
 }
 
-export default News
+export default News;
