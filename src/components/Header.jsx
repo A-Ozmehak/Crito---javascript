@@ -7,16 +7,18 @@ import { useState } from 'react';
 const Header = () => {
     const [show, setShow] = useState(false);
 
-    const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
 
     return (
+        <>        
+        {show ? (<MobileMenu show={show} onHide={handleClose} />) : null}
         <header>
             <div className="container">
                 <div className="header-container">
                     <Link className="logo" to="/"><img src={Logo} alt="the logo for the company Crito" /></Link>
-                    <Link className="hamburger-btn" onClick={handleShow}><i className="fa-solid fa-bars"></i></Link>
-                    <MobileMenu show={show} placement="top" onHide={handleClose} />
+                    <button className="hamburger-btn" onClick={() => setShow(!show)}>
+                        {show ? (<i className="fa-solid fa-xmark" />) : (<i className="fa-solid fa-bars"></i> )}
+                    </button>
                     <div className="menu">
                         <div className="top-menu">
                             <div className="contact-information">
@@ -53,8 +55,8 @@ const Header = () => {
                 </div> 
             </div>
         </header>
+        </>
     )
-
 }
 
 export default Header

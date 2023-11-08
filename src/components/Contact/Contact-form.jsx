@@ -60,12 +60,18 @@ const ContactForm = () => {
                 <h2>Leave us a message for any information.</h2>
                 <p className="errorMessage">{errorMessage}</p>
                 <form onSubmit={form.handleSubmit} noValidate>
-                    <input type="text" placeholder="Name*" name="name" title="name" tabIndex="1" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur} />
-                    <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.name && form.errors.name ? form.errors.name : ''}</p>
-                    <input type="email" placeholder="Email*" name="email" title="email" tabIndex="2" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur} />
-                    <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.email && form.errors.email ? form.errors.email : ''}</p>
-                    <textarea className="textarea" id="message" placeholder="Your Message*" name="message" tabIndex="3" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur}></textarea>
-                    <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.message && form.errors.message ? form.errors.message : ''}</p>
+                    <div className="input-box">
+                        <input type="text" placeholder="Name*" name="name" title="name" tabIndex="1" className={form.touched.name && form.errors.name ? 'input-error' : ''} value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur} />
+                        <p className={form.touched.name && form.errors.name ? 'errorMessage' : ''}>{form.touched.name && form.errors.name ? form.errors.name : ''}</p>
+                    </div>
+                    <div className="input-box">
+                        <input type="email" placeholder="Email*" name="email" title="email" tabIndex="2" className={form.touched.email && form.errors.email ? 'input-error' : ''} value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur} />
+                        <p className={form.touched.email && form.errors.email ? 'errorMessage' : ''}>{form.touched.email && form.errors.email ? form.errors.email : ''}</p>
+                    </div>
+                    <div className="input-box">
+                        <textarea className={form.touched.message && form.errors.message ? 'input-error' : ''} id="message" placeholder="Your Message*" name="message" tabIndex="3" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur}></textarea>
+                        <p className={form.touched.message && form.errors.message ? 'errorMessage' : ''}>{form.touched.message && form.errors.message ? form.errors.message : ''}</p>
+                    </div>
                     <Button color="yellow" type="submit" text="Send Message" url="" />
                 </form>
                 {showToast && <ToastNotification closeToast={closeToast} />}
