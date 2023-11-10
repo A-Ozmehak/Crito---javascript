@@ -1,5 +1,5 @@
-import FooterLogo from "../assets/LogoWhite.svg";
-import FooterLines from "../assets/lines-footer.png";
+import FooterLogo from "../../assets/LogoWhite.svg";
+import FooterLines from "../../assets/lines-footer.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

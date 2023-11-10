@@ -1,11 +1,11 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Article from '../components/NewsDetails/Article';
-import TitleSection from '../components/TitleSection/TitleSection';
-import ArticleNewsSection from '../components/Home/Article/Article-NewsSection';
-import SearchBar from '../components/NewsDetails/SearchBar';
-import RecentPosts from '../components/NewsDetails/RecentPosts';
-import Categories from '../components/NewsDetails/Categories';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import Article from '../components/NewsDetailsPageComponents/Article';
+import TitleSection from '../components/Generics/TitleSection/TitleSection';
+import ArticleNewsSection from '../components/Article-NewsSection/Article-NewsSection';
+import SearchBar from '../components/NewsDetailsPageComponents/SearchBar';
+import RecentPosts from '../components/NewsDetailsPageComponents/RecentPosts';
+import Categories from '../components/NewsDetailsPageComponents/Categories';
 
 const ArticleDetailPage = () => {
    

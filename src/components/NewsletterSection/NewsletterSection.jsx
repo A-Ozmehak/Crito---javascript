@@ -1,5 +1,5 @@
-import lines from "../assets/line-newletter.png";
-import Button from "./Generics/Button";
+import lines from "../../assets/line-newletter.png";
+import Button from "../Generics/Button/Button";
 
 const NewsletterSection = () => {
 

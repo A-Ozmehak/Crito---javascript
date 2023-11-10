@@ -1,0 +1,164 @@
+footer {
+    background-color: $footer-background;
+    position: relative;
+    z-index: 0;
+    padding-top: 80px;
+
+    .background-lines {
+        opacity: 0.40;
+        position: absolute;
+        bottom: 145px;
+        right: 0;
+        z-index: -1;
+        overflow: hidden;
+
+        @media (min-width: 511px) {
+            bottom: 121px;
+        }
+
+        @media (min-width: 576px) {
+            bottom: 121px;
+        }
+
+        @media (min-width: 996px) {
+            bottom: 97px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+
+        .footer-top-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 16px;
+            padding-bottom: 60px;
+
+            @media (min-width: 1200px) {
+                flex-direction: row;
+                margin-top: 16px;
+            }
+
+            .footer-description {
+                width: 100%;
+                margin-bottom: 50px;
+
+                @media (min-width: 1200px) {
+                    width: 30%;
+                }
+
+                img {
+                    padding-bottom: 20px;
+                }
+    
+                p {
+                    font-family: $font-inter;
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 26px;
+                    font-style: normal;
+                    text-align: left;
+                    color: $footer-text-color;
+                }
+            }
+    
+            .footer-links {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+    
+                @media (min-width: 576px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin-top: 0;
+                }
+    
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @media (min-width: 576px) {
+                        align-items: flex-start;
+                    }
+    
+                    .footer-link-title {
+                        color: $white;
+                        font-family: $font-dm-sans;
+                        font-size: 22px;
+                        font-weight: bold;
+                        line-height: 33px;
+                        font-style: normal;
+                        text-align: left;
+                        padding-bottom: 20px;
+                    }
+    
+                    a {
+                        font-family: $font-inter;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 40px;
+                        font-style: normal;
+                        text-align: left;
+                        color: $footer-text-color;
+                        transition: color 0.25s ease-in-out;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    .footer-border-bottom {
+        border-top: 1px solid rgba(255,255,255,0.2 );
+    }
+    .container {
+        .footer-bottom-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+            padding: 20px 0;
+
+            @media (min-width: 996px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            p {
+                color: $footer-text-color;
+            }
+    
+            .social-media {
+                display: flex;
+                flex-direction: row;
+    
+                a {
+                    margin-right: 20px;
+
+                    &:hover i {
+                        color: $primary-color;
+                    }
+
+                    i {
+                        color: $white;
+                        transition: color 0.2s ease-in-out;
+                    }
+                }
+            }
+        }  
+    }
+}

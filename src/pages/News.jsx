@@ -1,9 +1,9 @@
-import Header from '../components/Header';
-import TitleSection from '../components/TitleSection/TitleSection';
-import Articles from '../components/News/Articles';
-import ArticlePagination from '../components/News/ArticlePagination';
-import Footer from '../components/Footer';
-import NewsletterSection from '../components/NewsletterSection';
+import Header from '../components/Header/Header';
+import TitleSection from '../components/Generics/TitleSection/TitleSection';
+import Articles from '../components/NewsPageComponents/Articles';
+import ArticlePagination from '../components/NewsPageComponents/ArticlePagination';
+import Footer from '../components/Footer/Footer';
+import NewsletterSection from '../components/NewsletterSection/NewsletterSection';
 
 const ArticlesPage = () => {
     return (

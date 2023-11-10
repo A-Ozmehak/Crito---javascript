@@ -1,7 +1,7 @@
-import Logo from "../assets/Logo.svg";
+import Logo from "../../assets/Logo.svg";
 import { NavLink, Link } from 'react-router-dom';
-import Button from "./Generics/Button";
-import MobileMenu from "./MobilMenu";
+import Button from "../Generics/Button/Button";
+import MobileMenu from "../MobilMenu";
 import { useState } from 'react';
 
 const Header = () => {

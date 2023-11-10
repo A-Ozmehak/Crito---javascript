@@ -1,4 +1,4 @@
-import Button from "../../Generics/Button";
+import Button from "../../Generics/Button/Button";
 import Feature from "./Feature";
 
 const FeaturesSection = () => {

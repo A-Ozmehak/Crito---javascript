@@ -6,7 +6,7 @@ import customer1 from "../../../assets/customer1.png";
 import customer2 from "../../../assets/customer2.png";
 import customer3 from "../../../assets/customer3.png";
 import stars from "../../../assets/Stars.svg";
-import Button from "../../Generics/Button";
+import Button from "../../Generics/Button/Button";
 import TeamMembers from "./TeamMembers";
 import Testimonial from "./Testimonial";
 

@@ -1,4 +1,4 @@
-import backgroundLines from '../../assets/background-lines-showcase.png';
+import backgroundLines from '../../../assets/background-lines-showcase.png';
 
 const TitleSection = ({ title }) => {
   return (

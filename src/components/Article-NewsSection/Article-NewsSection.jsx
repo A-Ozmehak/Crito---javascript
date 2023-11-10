@@ -1,7 +1,7 @@
-import news1 from "../../../assets/news1.png";
-import news2 from "../../../assets/news2.png";
-import news3 from "../../../assets/news3.png";
-import Button from '../../Generics/Button';
+import news1 from "../../assets/news1.png";
+import news2 from "../../assets/news2.png";
+import news3 from "../../assets/news3.png";
+import Button from '../Generics/Button/Button';
 import Articles from "./Articles";
 
 const ArticleNewsSection = () => {

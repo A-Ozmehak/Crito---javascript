@@ -1,9 +1,9 @@
-import Header from '../components/Header';
-import TitleSection from '../components/TitleSection/TitleSection';
-import ContactInformationBoxes from '../components/Contact/Contact-information-boxes';
-import ContactForm from '../components/Contact/Contact-form';
-import Map from '../components/Contact/Map';
-import Footer from '../components/Footer';
+import Header from '../components/Header/Header';
+import TitleSection from '../components/Generics/TitleSection/TitleSection';
+import ContactInformationBoxes from '../components/ContactPageComponents/Contact-information-boxes';
+import ContactForm from '../components/ContactPageComponents/Contact-form';
+import Map from '../components/ContactPageComponents/Map';
+import Footer from '../components/Footer/Footer';
 
 const Contact = () => {
     return (

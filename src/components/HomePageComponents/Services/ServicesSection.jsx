@@ -1,6 +1,6 @@
 import lines from "../../../assets/service-line.png";
 import ServiceBox from "./ServiceBox";
-import Button from "../../Generics/Button";
+import Button from "../../Generics/Button/Button";
 
 const ServicesSection = () => {
     const services = [

@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap');
+
+//colors
+$primary-color: #f9d783;
+$secondary-color: #6c757d;
+$primary-background: #F0EFE9;
+$black: #191919;
+$white: #fff;
+$light-border: #E5E5E5;
+$border: #DAD9D3;
+$red: red;
+$footer-background: #0e1021;
+$footer-text-color: rgba(255,255,255,0.7 );
+$text-with-alpha: rgba(25, 25, 25, 0.7);
+
+//fonts
+$font-inter: "Inter", sans-serif;
+$font-dm-sans: "DM Sans", sans-serif;
+
+// pages
 @import './scss/contact';
-@import './scss/global';
-@import './scss/style';
+@import './scss/home';
 @import './scss/news';
 @import './scss/newsDetails';
 
+// global
+@import './scss/global';
+
+// generic components
+@import './components/Generics/TitleSection/titlesection';
+@import './components/Generics/Button/button';
+
 // components
-@import './components/TitleSection/titlesection';
+@import './components/Footer/footer';
+@import './components/Header/header';
+@import './components/NewsletterSection/newsletter';
+@import './components//Article-NewsSection/articleNews';

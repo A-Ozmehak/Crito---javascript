@@ -1,4 +1,4 @@
-import Button from "../Generics/Button";
+import Button from "../Generics/Button/Button";
 import { useState } from "react";
 import ToastNotification from "../ToastNotification";
 import { useFormik } from "formik";

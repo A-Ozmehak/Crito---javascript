@@ -1,6 +1,6 @@
 import lines from "../../assets/background-lines-showcase.png";
 import showcase from "../../assets/showcase.png";
-import Button from "../Generics/Button";
+import Button from "../Generics/Button/Button";
 
 const ShowCaseSection = () => {
     return (
