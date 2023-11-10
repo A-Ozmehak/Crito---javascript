@@ -12,8 +12,10 @@ const ShowCaseSection = () => {
                     <div className="showcase-left">
                             <h1>We provide The Best business solutions</h1>
                             <p className="showcase-text">Establish your vision and value proposition and turn them into testable prototypes.</p>
-                            <Button color="yellow" text="Get Consulting" url="/consulting" />
-                            <Button color="transparent" text="Learn more" url="/services" />
+                            <div>
+                                <Button color="yellow" text="Get Consulting" url="/consulting" />
+                                <Button color="transparent" text="Learn more" url="/services" />
+                            </div>
                     </div>
                     <img src={showcase} alt="man with a tablet" />
                 </div>

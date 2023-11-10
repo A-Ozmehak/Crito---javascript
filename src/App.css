@@ -609,15 +609,29 @@ body {
   font-size: 20px;
   line-height: 32px;
 }
-.showcase-section .container .showcase-left button {
+.showcase-section .container .showcase-left div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .showcase-section .container .showcase-left div {
+    justify-content: flex-start;
+  }
+}
+.showcase-section .container .showcase-left div button {
   margin-right: 0;
   display: block;
   margin-top: 30px;
 }
-@media (min-width: 768px) {
-  .showcase-section .container .showcase-left button {
-    display: inline-block;
+@media (min-width: 568px) {
+  .showcase-section .container .showcase-left div button {
     margin-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .showcase-section .container .showcase-left div button {
+    display: inline-block;
     margin-bottom: 150px;
   }
 }
@@ -748,11 +762,12 @@ body {
   margin-top: 32px;
 }
 .about-company-section .container .text-container .buttons-container {
-  margin-top: 100px;
+  margin-top: 60px;
+  display: flex;
+  margin-bottom: 32px;
 }
 @media (min-width: 768px) {
   .about-company-section .container .text-container .buttons-container {
-    display: flex;
     margin-bottom: 50px;
     margin-top: 70px;
   }
@@ -760,16 +775,15 @@ body {
 .about-company-section .container .text-container .buttons-container .learn-more-btn {
   width: 180px;
   height: 56px;
+  margin-right: 20px;
 }
 .about-company-section .container .text-container .buttons-container .video-btn-container {
-  margin: 32px 0;
   display: flex;
   align-items: center;
 }
 @media (min-width: 768px) {
   .about-company-section .container .text-container .buttons-container .video-btn-container {
     margin-top: 0;
-    margin-left: 48px;
   }
 }
 .about-company-section .container .text-container .buttons-container .video-btn-container .play-btn {

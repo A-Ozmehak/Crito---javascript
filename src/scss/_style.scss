@@ -84,15 +84,28 @@ body {
                 line-height: 32px;
             }
 
-            button {
-                margin-right: 0;
-                display: block;
-                margin-top: 30px;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                @media (min-width: 768px) {
-                    display: inline-block;
-                    margin-right: 10px;
-                    margin-bottom: 150px;
+                @media (min-width: 1200px) {
+                    justify-content: flex-start;
+                }
+
+                button {
+                    margin-right: 0;
+                    display: block;
+                    margin-top: 30px;
+
+                    @media (min-width: 568px) {
+                        margin-right: 10px;
+                    }
+    
+                    @media (min-width: 768px) {
+                        display: inline-block;
+                        margin-bottom: 150px;
+                    }
                 }
             }
         }
@@ -233,10 +246,11 @@ body {
             }
     
             .buttons-container {
-                margin-top: 100px;
+                margin-top: 60px;
+                display: flex;
+                margin-bottom: 32px;
     
                 @media (min-width: 768px) {
-                    display: flex;
                     margin-bottom: 50px;
                     margin-top: 70px;
                 }
@@ -244,16 +258,16 @@ body {
                 .learn-more-btn {
                     width: 180px;
                     height: 56px;
+                    margin-right: 20px;
                 }
         
                 .video-btn-container {
-                    margin: 32px 0;
                     display: flex;
                     align-items: center;
     
                     @media (min-width: 768px) {
                         margin-top: 0;
-                        margin-left: 48px;
+                        // margin-left: 48px;
                     }
     
                     .play-btn {
