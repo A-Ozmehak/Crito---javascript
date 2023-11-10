@@ -1,5 +1,5 @@
-import chooseUs from '../../../assets/choose-us.png'
-import Services from './Services'
+import chooseUs from '../../../assets/choose-us.png';
+import Services from './Services';
 
 const ChooseUsSection = () => {
     const content = [
@@ -52,4 +52,4 @@ const ChooseUsSection = () => {
     )
 }
 
-export default ChooseUsSection
+export default ChooseUsSection;

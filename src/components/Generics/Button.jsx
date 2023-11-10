@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types'
-
-const YellowBtn = ({ color, type, text, url }) => {
+const Button = ({ color, type, text, url }) => {
 
     const getButton = () => {
         switch(color) {
@@ -21,12 +19,5 @@ const YellowBtn = ({ color, type, text, url }) => {
     )
 }
 
-YellowBtn.propTypes = {
-    type: PropTypes.string,
-    color: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
-}
-
-export default YellowBtn
+export default Button;
 

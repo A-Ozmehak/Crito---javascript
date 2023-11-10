@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types'
-import './titlesection.css'
-import backgroundLines from '../../assets/background-lines-showcase.png'
+import backgroundLines from '../../assets/background-lines-showcase.png';
 
 const TitleSection = ({ title }) => {
   return (
@@ -19,8 +17,4 @@ const TitleSection = ({ title }) => {
   )
 }
 
-TitleSection.propTypes = {
-    title: PropTypes.string.isRequired
-}
-
-export default TitleSection
+export default TitleSection;

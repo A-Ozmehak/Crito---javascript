@@ -1,6 +1,6 @@
-import lines from "../../../assets/service-line.png"
-import ServiceBox from "./ServiceBox"
-import Button from "../../Generics/Button"
+import lines from "../../../assets/service-line.png";
+import ServiceBox from "./ServiceBox";
+import Button from "../../Generics/Button";
 
 const ServicesSection = () => {
     const services = [
@@ -35,4 +35,4 @@ const ServicesSection = () => {
     )
 }
 
-export default ServicesSection
+export default ServicesSection;

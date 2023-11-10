@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const Articles = ({ img, alt, spanText, title, description }) => {
   return (
         <div className="news-content">
@@ -11,12 +9,4 @@ const Articles = ({ img, alt, spanText, title, description }) => {
     ) 
 }
 
-Articles.propTypes = {
-    img: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    spanText: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-}
-
-export default Articles
+export default Articles;

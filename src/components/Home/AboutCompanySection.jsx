@@ -36,4 +36,4 @@ const AboutCompanySection = () => {
     )
 }
 
-export default AboutCompanySection
+export default AboutCompanySection;

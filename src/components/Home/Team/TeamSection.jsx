@@ -1,14 +1,14 @@
-import team1 from "../../../assets/Team1.png"
-import team2 from "../../../assets/Team2.png"
-import team3 from "../../../assets/Team3.png"
-import team4 from "../../../assets/Team4.png"
-import customer1 from "../../../assets/customer1.png"
-import customer2 from "../../../assets/customer2.png"
-import customer3 from "../../../assets/customer3.png"
-import stars from "../../../assets/Stars.svg"
-import Button from "../../Generics/Button"
-import TeamMembers from "./TeamMembers"
-import Testimonial from "./Testimonial"
+import team1 from "../../../assets/Team1.png";
+import team2 from "../../../assets/Team2.png";
+import team3 from "../../../assets/Team3.png";
+import team4 from "../../../assets/Team4.png";
+import customer1 from "../../../assets/customer1.png";
+import customer2 from "../../../assets/customer2.png";
+import customer3 from "../../../assets/customer3.png";
+import stars from "../../../assets/Stars.svg";
+import Button from "../../Generics/Button";
+import TeamMembers from "./TeamMembers";
+import Testimonial from "./Testimonial";
 
 const TeamSection = () => {
     const team = [
@@ -103,4 +103,4 @@ const TeamSection = () => {
     )
 }
 
-export default TeamSection
+export default TeamSection;

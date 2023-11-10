@@ -1,9 +1,9 @@
-import paperz from '../../../assets/paperz.svg'
-import dorfus from '../../../assets/dorfus.svg'
-import martino from '../../../assets/martino.svg'
-import square from '../../../assets/square.svg'
-import gobona from '../../../assets/gobona.svg'
-import Logo from './Logo'
+import paperz from '../../../assets/paperz.svg';
+import dorfus from '../../../assets/dorfus.svg';
+import martino from '../../../assets/martino.svg';
+import square from '../../../assets/square.svg';
+import gobona from '../../../assets/gobona.svg';
+import Logo from './Logo';
 
 const Logos = () => {
     const logos = [
@@ -44,4 +44,4 @@ const Logos = () => {
     )
 }
 
-export default Logos
+export default Logos;

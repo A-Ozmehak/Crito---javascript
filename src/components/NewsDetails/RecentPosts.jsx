@@ -23,4 +23,4 @@ const RecentPosts = () => {
     )
 }
 
-export default RecentPosts
+export default RecentPosts;

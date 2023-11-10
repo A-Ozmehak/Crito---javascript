@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const Feature = ({ icon, title, description }) => {
   return (
         <div className="feature">
@@ -10,10 +8,4 @@ const Feature = ({ icon, title, description }) => {
     )
 }
 
-Feature.propTypes = {
-    icon: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-}
-
-export default Feature
+export default Feature;

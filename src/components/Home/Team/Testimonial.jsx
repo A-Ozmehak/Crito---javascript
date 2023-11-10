@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const Testimonial = ({ starsImg, alt, quote, customerImg, customerImgAlt, customerName, customerPosition }) => {
     return (
         <div className="client-quote">
@@ -16,14 +14,4 @@ const Testimonial = ({ starsImg, alt, quote, customerImg, customerImgAlt, custom
     )
 }
 
-Testimonial.propTypes = {
-    starsImg: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    quote: PropTypes.string.isRequired,
-    customerImg: PropTypes.string.isRequired,
-    customerImgAlt: PropTypes.string.isRequired,
-    customerName: PropTypes.string.isRequired,
-    customerPosition: PropTypes.string.isRequired
-}
-
-export default Testimonial
+export default Testimonial;

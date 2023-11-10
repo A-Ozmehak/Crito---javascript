@@ -321,6 +321,8 @@ footer {
 
             .footer-description {
                 width: 100%;
+                margin-bottom: 50px;
+
                 @media (min-width: 1200px) {
                     width: 30%;
                 }
@@ -344,7 +346,6 @@ footer {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                margin-top: 20px;
     
                 @media (min-width: 576px) {
                     flex-direction: row;

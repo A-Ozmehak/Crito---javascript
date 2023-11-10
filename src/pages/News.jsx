@@ -1,9 +1,9 @@
-import Header from '../components/Header'
-import TitleSection from '../components/TitleSection/TitleSection'
-import Articles from '../components/News/Articles'
-import ArticlePagination from '../components/News/ArticlePagination'
-import Footer from '../components/Footer'
-import NewsletterSection from '../components/NewsletterSection'
+import Header from '../components/Header';
+import TitleSection from '../components/TitleSection/TitleSection';
+import Articles from '../components/News/Articles';
+import ArticlePagination from '../components/News/ArticlePagination';
+import Footer from '../components/Footer';
+import NewsletterSection from '../components/NewsletterSection';
 
 const ArticlesPage = () => {
     return (
@@ -18,4 +18,4 @@ const ArticlesPage = () => {
     )
 }
 
-export default ArticlesPage
+export default ArticlesPage;

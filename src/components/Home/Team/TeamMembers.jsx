@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const TeamMembers = ({ img, alt, name, position }) => {
   return (
         <div className="team-member">
@@ -10,11 +8,4 @@ const TeamMembers = ({ img, alt, name, position }) => {
     )
 }
 
-TeamMembers.propTypes = {
-    img: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired
-}
-
-export default TeamMembers
+export default TeamMembers;

@@ -8,7 +8,6 @@ const Article = () => {
 
     useEffect(() => {
         getArticle(id);
-
         return () => clearArticle();
     }, []);
 
@@ -44,4 +43,4 @@ const Article = () => {
     )
 }
 
-export default Article
+export default Article;

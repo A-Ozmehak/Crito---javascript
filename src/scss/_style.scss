@@ -1014,12 +1014,11 @@ body {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    margin-bottom: 48px;
                 }
 
             h2 {
                 font-size: 30px;
-                margin-bottom: 32px;
+                padding-top: 0;
     
                 @media (min-width: 1200px) {
                     font-size: 35px;
@@ -1206,7 +1205,7 @@ body {
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                max-width: 700px;
+                // max-width: 700px;
             }
     
             input {
@@ -1220,6 +1219,7 @@ body {
 
                 @media (min-width: 1200px) {
                     margin-right: 20px;
+                    margin-bottom: 0;
                 }
             }
 
@@ -1236,7 +1236,7 @@ body {
                 display: none;
             }
         
-            a {
+            button {
                 width: 100%;
                 height: 56px;
                 margin-bottom: 32px;

@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const Services = ({ icon, title, description }) => {
   return (
         <div className="content">
@@ -14,10 +12,4 @@ const Services = ({ icon, title, description }) => {
     )
 }
 
-Services.propTypes = {
-    icon: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-}
-
-export default Services
+export default Services;

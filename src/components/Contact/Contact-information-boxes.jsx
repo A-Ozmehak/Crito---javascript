@@ -1,4 +1,3 @@
-
 const ContactInformationBoxes = () => {
     return (
         <div>
@@ -41,4 +40,4 @@ const ContactInformationBoxes = () => {
 
 }
 
-export default ContactInformationBoxes
+export default ContactInformationBoxes;

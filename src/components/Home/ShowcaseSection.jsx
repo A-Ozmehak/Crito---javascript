@@ -23,4 +23,4 @@ const ShowCaseSection = () => {
     )
 }
 
-export default ShowCaseSection
+export default ShowCaseSection;

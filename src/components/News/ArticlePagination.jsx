@@ -18,4 +18,4 @@ const ArticlePagination = () => {
 
 }
 
-export default ArticlePagination
+export default ArticlePagination;

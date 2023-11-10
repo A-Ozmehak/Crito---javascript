@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Project = ({ img, alt, title, buttonText }) => {
     return (
@@ -11,11 +10,4 @@ const Project = ({ img, alt, title, buttonText }) => {
     )
 }
 
-Project.propTypes = {
-    img: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    buttonText: PropTypes.string.isRequired
-}
-
-export default Project
+export default Project;

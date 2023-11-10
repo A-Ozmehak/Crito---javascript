@@ -1,6 +1,6 @@
-import FooterLogo from "../assets/LogoWhite.svg"
-import FooterLines from "../assets/lines-footer.png"
-import { Link } from "react-router-dom"
+import FooterLogo from "../assets/LogoWhite.svg";
+import FooterLines from "../assets/lines-footer.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -62,4 +62,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

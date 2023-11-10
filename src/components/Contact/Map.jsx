@@ -7,4 +7,4 @@ const Map = () => {
 
 }
 
-export default Map
+export default Map;

@@ -34,4 +34,4 @@ const ArticleDetailPage = () => {
 
 }
 
-export default ArticleDetailPage
+export default ArticleDetailPage;

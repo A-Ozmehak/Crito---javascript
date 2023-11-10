@@ -1,5 +1,4 @@
 import Toast from 'react-bootstrap/Toast';
-import PropTypes from 'prop-types';
 
 const ToastNotification = ({ closeToast }) => {
   return (
@@ -12,9 +11,5 @@ const ToastNotification = ({ closeToast }) => {
     </Toast>
   );
 }
-
-ToastNotification.propTypes = {
-  closeToast: PropTypes.func.isRequired,
-};
 
 export default ToastNotification;

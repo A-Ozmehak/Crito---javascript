@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const ServiceBox = ({ title, description }) => {
   return (
@@ -14,9 +13,4 @@ const ServiceBox = ({ title, description }) => {
   )
 }
 
-ServiceBox.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-}
-
-export default ServiceBox
+export default ServiceBox;
