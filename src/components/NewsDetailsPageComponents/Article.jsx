@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { useArticles } from "../../contexts/ArticleContext";
+import SearchBar from "./SearchBar";
+import RecentPosts from "./RecentPosts";
+import Categories from "./Categories";
 
 const Article = () => {
     const { article, getArticle, clearArticle } = useArticles();
@@ -21,7 +24,7 @@ const Article = () => {
             {
                 article ? 
                 (
-                    <div key={article.id}>
+                    <div className="article-content" key={article.id}>
                         <h3>{article.title}</h3>
                         <div className="article-details">
                             <p>{formatDate(article.published)}</p>
@@ -30,8 +33,17 @@ const Article = () => {
                             <div className="yellow-dot"></div>
                             <p>{article.author}</p>
                         </div>
-                        <img src={article.imageUrl} alt={article.title} /> 
-                        <p className="content">{article.content}</p>
+                        <div className="image-right-side-container">
+                            <div>
+                                <img src={article.imageUrl} alt={article.title} /> 
+                                <p className="content">{article.content}</p>
+                            </div>
+                            <div className="right-content-container">
+                                <SearchBar />
+                                <RecentPosts />
+                                <Categories />
+                            </div>
+                        </div>
                     </div>
                 )
                 :

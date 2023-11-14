@@ -20,7 +20,7 @@ const ArticleNewsSection = () => {
                         <h2>Get Every Single Articles & News</h2>
                     </div>
                         <div className="btn">
-                            <Button color="transparent" text="View Articles" url="/news" />
+                            <Button color="transparent" text="Browse Articles" url="/news" />
                         </div>
                 </div>
                 <div className="content-container">

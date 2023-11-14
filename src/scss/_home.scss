@@ -668,6 +668,13 @@ body {
                     }
             
                     .description {
+                        font-family: $font-inter;
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-style: normal;
+                        text-align: left;
+                        color: rgba(25,25,25,0.7 );
+
                         @media (min-width: 1200px) {
                             margin-left: 16px;
                         }
@@ -734,7 +741,7 @@ body {
                     transition: font-size 0.2s ease-in-out, text-decoration 0.25s ease-in-out;
                 
                     i {
-                        margin-left: 3px;
+                        margin-left: 10px;
                     }   
                 }
 
@@ -771,7 +778,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                margin-bottom: 48px;
+                margin-bottom: 20px;
             }
             
             .title {
@@ -801,6 +808,10 @@ body {
                     @media (min-width: 1200px) {
                         margin-right: 0;
                     }
+
+                    i {
+                        padding-left: 20px;
+                    }
                 }
             }
         }
@@ -824,7 +835,6 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
                 margin-bottom: 48px; 
 
                 img {

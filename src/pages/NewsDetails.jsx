@@ -15,11 +15,6 @@ const ArticleDetailPage = () => {
                     <div className="article-content-container">
                         <Article />
                     </div>
-                    <div className="right-content-container">
-                        <SearchBar />
-                        <RecentPosts />
-                        <Categories />
-                    </div>
                 </div>
             </div>
             <section className="more-articles-section">
