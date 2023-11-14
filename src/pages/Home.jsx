@@ -1,5 +1,3 @@
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import ShowCaseSection from '../components/HomePageComponents/ShowcaseSection';
 import Logos from '../components/HomePageComponents/BrandLogos/LogosSection';
 import FeaturesSection from '../components/HomePageComponents/Features/FeaturesSection';
@@ -14,7 +12,6 @@ import NewsletterSection from '../components/NewsletterSection/NewsletterSection
 export const Home = () => {
     return (
         <div>
-            <Header />
             <ShowCaseSection />
             <Logos />
             <FeaturesSection />
@@ -25,7 +22,6 @@ export const Home = () => {
             <TeamSection />
             <ArticleNewsSection />
             <NewsletterSection />
-            <Footer />
         </div>
     )
 }

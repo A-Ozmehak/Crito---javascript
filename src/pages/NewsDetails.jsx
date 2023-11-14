@@ -1,5 +1,3 @@
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import Article from '../components/NewsDetailsPageComponents/Article';
 import TitleSection from '../components/Generics/TitleSection/TitleSection';
 import ArticleNewsSection from '../components/Article-NewsSection/Article-NewsSection';
@@ -11,7 +9,6 @@ const ArticleDetailPage = () => {
    
     return (
         <div>
-            <Header />
             <TitleSection title="News & Articles" />
             <div className="news-detail-content">
                 <div className="container">
@@ -28,7 +25,6 @@ const ArticleDetailPage = () => {
             <section className="more-articles-section">
                 <ArticleNewsSection />
             </section>
-            <Footer />
         </div>
     )
 
