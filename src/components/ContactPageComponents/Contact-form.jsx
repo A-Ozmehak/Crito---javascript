@@ -10,6 +10,7 @@ const ContactForm = () => {
 
     const closeToast = () => setShowToast(false);
 
+    const nameRegex = new RegExp(/^[a-zA-Z]+$/);
     const emailRegex = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
 
     const form = useFormik({
@@ -21,7 +22,8 @@ const ContactForm = () => {
         validationSchema: Yup.object({
             name: Yup.string()
                 .required('Name is required')
-                .min(2, 'Name must be at least 2 characters long'),
+                .min(2, 'Name must be at least 2 characters long')
+                .matches(nameRegex, 'Name must only contain letters'),
             email: Yup.string()
                 .required('Email is required')
                 .matches(emailRegex, 'Email is not valid'),
